@@ -335,7 +335,7 @@ export default class VirtualRenderer {
             delete this._renderStack[key];
         }
 
-        Object.assign(this._renderStack, newRenderStack);
+        this._renderStack = {...this._renderStack, ...newRenderStack};
 
         for (const key in this._renderStack) {
             if (this._renderStack.hasOwnProperty(key)) {

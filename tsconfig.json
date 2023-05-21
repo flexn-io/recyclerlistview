@@ -1,7 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["es6", "dom"], // target Node.js(v6)
-    "types": ["react", "react-native", "resize-observer-browser"],
+    "lib": [
+      "es6",
+      "dom"
+    ], // target Node.js(v6)
+    "types": [
+      "react",
+      "react-native",
+      "resize-observer-browser"
+    ],
     "module": "commonjs", // export compatibility
     "target": "es5", // target Node.js(v6)
     "moduleResolution": "node", // target Node.js(v6)
