@@ -362,6 +362,10 @@ export default class RecyclerListView<P extends RecyclerListViewProps, S extends
         return this.props.renderAheadOffset!;
     }
 
+    public setScrollComponent(scrollComponent: ScrollComponent): void {
+        this._scrollComponent = scrollComponent;
+    }
+
     public getCurrentScrollOffset(): number {
         const viewabilityTracker = this._virtualRenderer.getViewabilityTracker();
         return viewabilityTracker ? viewabilityTracker.getLastActualOffset() : 0;
