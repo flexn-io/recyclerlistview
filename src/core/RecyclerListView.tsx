@@ -362,7 +362,7 @@ export default class RecyclerListView<P extends RecyclerListViewProps, S extends
         return this.props.renderAheadOffset!;
     }
 
-    public setScrollComponent(scrollComponent: ScrollComponent): void {
+    public setScrollComponent(scrollComponent: BaseScrollComponent): void {
         this._scrollComponent = scrollComponent;
     }
 
